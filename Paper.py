@@ -11,9 +11,9 @@ total_qty = 0
 username = getpass.getuser()
 
 def menu():
-    print(f"""
-    Hello, {username}
-    PAPER COMPANY -- MAIN MENU:
+    print(f""" 
+    CURRENT USER = {username}
+  |LOANSHARK PAPER COMPANY| -- MAIN MENU:
     1. Add to Inventory
     2. Sell Paper
     3. Show Profits
@@ -21,9 +21,13 @@ def menu():
     5. Exit()
     """)
 
-
 menu()
 choice = int(input("Which would you like to do? >>> "))
+while choice < 1 or choice > 5:
+    print('INVALID CHOICE, TRY AGAIN')
+    time.sleep(0.5)
+    menu()
+    choice = int(input("Which would you like to do? >>> "))
 
 if choice == 1:
     qty_input = int(input("How many boxes of paper would you like to order? >>> "))  # takes user input for amt ordered
