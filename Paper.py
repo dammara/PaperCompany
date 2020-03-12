@@ -4,14 +4,15 @@
 
 from SQ import Stack
 import time
-
+import getpass
 qty = Stack()
 price = Stack()
 total_qty = 0
-
+username = getpass.getuser()
 
 def menu():
-    print("""
+    print(f"""
+    Hello, {username}
     PAPER COMPANY -- MAIN MENU:
     1. Add to Inventory
     2. Sell Paper
@@ -72,7 +73,7 @@ if choice == 4:
     choice = int(input("Which would you like to do? >>> "))
 
 if choice == 5:
-    print("Goodbye, user. Remember to clock out, because we won't pay you for overtime")
+    print(f"Goodbye, {username}. Remember to clock out, because we won't pay you for overtime")
     time.sleep(5)
     exit()
 #while choice < 1 or choice > 5:
