@@ -1,6 +1,6 @@
 # Markhus Dammar
 # 3/10/2020
-# This is the paper company 'driver' prog
+# This is the STACK paper company 'driver' prog
 
 from SQ import Stack
 import time

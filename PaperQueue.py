@@ -1,6 +1,6 @@
 # Markhus Dammar
 # 3/10/2020
-# This is the paper company 'driver' prog
+# This is the QUEUE paper company 'driver' prog
 
 from SQ import Queue
 import time
