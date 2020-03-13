@@ -82,4 +82,7 @@ class LinkedList:
         return False
 
 
+    def peek(self):
+        return self.head.data
+
 
